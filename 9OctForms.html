@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        input[type="text"],[type="password"],textarea,input[type="email"],input[type="submit"], input[type="reset"]{
+
+            background-color: yellow;
+            color: red;
+            border: 2px brown solid;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        label{
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: darkblue;
+        }
+
+        input[type="submit"]:hover, input[type="reset"]:hover
+        {
+            transform: scale(1.4);
+            transition: 1s;
+        }
+
+        input[type="text"]:focus,input[type="password"]:focus{
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="" method="post">
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="na" placeholder="Enter name" size="40" maxlength="4">
+
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+        <br><br>
+
+        <label for="pass">Password</label>
+        <input type="password" id="pass" name="pass" placeholder="Enter Password">
+
+        <br><br>
+
+        <label for="review">Add a Review:</label>
+        <textarea name="review" id="review" rows="7" cols="40"></textarea>
+
+        <br><br>
+
+        <label for="hobby">Choose your Hobby:</label>
+        <input type="checkbox" id="hobby" name="hobby" value="dance">Dancing
+        <input type="checkbox" id="hobby" name="hobby" value="sing" checked>Singing
+        <input type="checkbox" id="hobby" name="hobby" value="cook">Cooking
+
+        <br><br>
+
+        <label for="course">Choose your Course:</label>
+        <input type="radio" name="course" id="btech" value="btech">
+        <label for="btech">B.Tech</label>
+
+        <input type="radio" name="course" id="bca" value="bca">
+        <label for="bca">BCA</label>
+
+        <input type="radio" name="course" id="bpt" value="bpt" checked>
+        <label for="bpt">BPT</label>
+
+        <br><br>
+        <label for="statesel">Select the state:</label>
+        <select name="statesel" id="statesel" size="3" multiple>
+            <option value="choosestate">Choose your state</option>
+            <option value="punjab">Punjab</option>
+            <option value="haryana" selected>Haryana</option>
+            <option value="kerala">Kerala</option>
+            <option value="ap">Andhra Pradesh</option>
+        </select>
+
+        <br><br>
+
+        <label for="fileupload">Upload the file:</label>
+        <input type="file" name="fileupload" id="fileupload">
+
+        <br><br>
+
+        <input type="submit" name="submit" id="submit" value="Submit Form">
+        <input type="reset" name="reset" id="reset" value="Reset Form">
+        <input type="button" name="button" id="button" value="Button">
+        <input type="image" name="imgbutton" id="imgbutton" src="OK image.jpg" width="50" height="50">
+
+
+
+
+    </form>
+
+
+
+
+</body>
+</html>
